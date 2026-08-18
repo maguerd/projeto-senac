@@ -1,0 +1,68 @@
+/* Configuração geral das divs */
+div {
+    border-radius: 15px;
+}
+
+/* Corpo da página */
+body {
+    
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Título principal */
+.h1primeiro {
+    color: red;
+    text-align: center;
+}
+
+/* Área dos cards */
+.caixa {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    border-radius: 0cap;
+}
+
+/* Card */
+.card {
+    background-color:brown;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    transition: transform 0.5s;
+     
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+    gap:
+}
+
+
+
+.bodysobre {
+    background-image: url('imagem/foto tecnologia.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+.catalago {
+    background-image: url('imagem/foto tecnologia.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+
+
