@@ -1,0 +1,29 @@
+body{
+    background-color: red;
+}
+
+header{
+    background-color: aqua;
+    color: blue;
+    
+
+}
+
+main{
+    color: black
+}
+footer{
+    color:blue
+}
+
+button{
+    color: blue;
+}
+
+main:hover{
+    background-color: blue;
+
+}
+footer{
+    cursor: pointer;
+}
