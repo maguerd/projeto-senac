@@ -1,0 +1,198 @@
+/* =========================
+   CONFIGURAÇÃO GERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #111111, #292929);
+    color: white;
+    min-height: 100vh;
+}
+
+
+
+
+header {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+        ),
+        linear-gradient(135deg, #151515, #3a3a3a);
+
+    border-bottom: 4px solid #d4af37;
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+header h1 {
+    font-size: 48px;
+    color: #d4af37;
+
+    margin-bottom: 25px;
+
+    max-width: 900px;
+
+    text-shadow: 2px 2px 5px black;
+}
+
+
+/* =========================
+   SUBTÍTULO
+========================= */
+
+header h3 {
+    font-size: 22px;
+    line-height: 1.6;
+
+    font-weight: normal;
+
+    max-width: 750px;
+
+    margin-bottom: 40px;
+
+    color: #f5f5f5;
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+.botao {
+    display: inline-block;
+
+    padding: 16px 30px;
+
+    background-color: blue;
+    color: #111111;
+
+    text-decoration: none;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    transition: 0.3s;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Efeito ao passar o mouse */
+
+.botao:hover {
+    background-color: #ffffff;
+
+    color: #111111;
+
+    transform: scale(1.05);
+
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.5);
+}
+
+
+/* =========================
+   ÁREA PRINCIPAL
+========================= */
+
+main {
+    min-height: 300px;
+
+    padding: 50px 20px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+nav {
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: #0d0d0d;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    padding: 25px;
+
+    text-align: center;
+
+    background-color: #080808;
+
+    color: #cccccc;
+
+    border-top: 2px solid #d4af37;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 34px;
+    }
+
+    header h3 {
+        font-size: 18px;
+    }
+
+    .botao {
+        font-size: 16px;
+        padding: 14px 24px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header h3 {
+        font-size: 16px;
+    }
+
+    .botao {
+        width: 100%;
+        max-width: 300px;
+    }
+}
