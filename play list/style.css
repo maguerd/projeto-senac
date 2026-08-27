@@ -1,0 +1,172 @@
+/* ==============================
+   MINHA PLAYLIST - STYLE.CSS
+   ============================== */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, green, blue, #08001a);
+    color: white;
+    min-height: 100vh;
+    padding: 30px;
+    text-align: center;
+    
+}
+
+
+h1 {
+    font-size: 42px;
+    color: black;
+    margin-bottom: 15px;
+    text-shadow: 0 0 15px #ff4fd8;
+}
+
+/* Subtítulos */
+h3 {
+    margin: 15px 0;
+    color: yellow;
+    font-weight: normal;
+}
+
+/* Labels */
+label {
+    display: inline-block;
+    margin: 15px 5px 8px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Campos de texto */
+input {
+    width: 280px;
+    padding: 12px;
+    border: 2px solid #9b4dff;
+    border-radius: 25px;
+    background-color: #1b0b35;
+    color: white;
+    outline: none;
+    font-size: 16px;
+    margin: 8px;
+}
+
+/* Quando clicar no input */
+input:focus {
+    border-color: #ff4fd8;
+    box-shadow: 0 0 10px #ff4fd8;
+}
+
+/* Botões */
+button {
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #ff4fd8, #8c42ff);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px #ff4fd8;
+}
+
+/* Área da lista */
+#lista {
+    width: 80%;
+    max-width: 600px;
+    min-height: 100px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 2px solid #9b4dff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(155, 77, 255, 0.4);
+}
+
+/* Lista de músicas */
+ul {
+    list-style: none;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0;
+}
+
+/* Cada música */
+li {
+    background: linear-gradient(90deg, #241044, #42106b);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 15px;
+    border-left: 5px solid #ff4fd8;
+    text-align: left;
+    transition: 0.3s;
+}
+
+/* Efeito nas músicas */
+li:hover {
+    transform: translateX(10px);
+    background: linear-gradient(90deg, #42106b, #64108c);
+    box-shadow: 0 0 12px rgba(255, 79, 216, 0.5);
+}
+
+/* Header */
+header {
+    margin-top: 30px;
+}
+
+/* Conteúdo principal */
+main {
+    margin: 20px auto;
+}
+
+/* Navegação */
+nav {
+    margin: 20px;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    color: #bda7d9;
+    border-top: 1px solid #5c3780;
+}
+
+/* Responsividade para celular */
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    button {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    #lista,
+    ul {
+        width: 95%;
+    }
+}
